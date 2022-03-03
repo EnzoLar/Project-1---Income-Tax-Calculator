@@ -1,0 +1,7 @@
+#Income Tax Calculator
+gross_income = float(input("Enter the gross income: "))
+dependent = int(input("Enter the number of dependents: "))
+gross_income_with_dependent = float((gross_income - 10000)- (dependent * 3000))
+income_tax = float(gross_income_with_dependent * 0.20)
+income_tax = "${:,.1f}".format(income_tax)
+print("The income tax is", income_tax)
